@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap';
+#sidebar {
+  float: left;
+  background: #000000DD;
+  text-align: center;
+  width: 24em;
+  backdrop-filter: blur(20px);
+  height: 100vh;
+}
+
+img {
+  display: inline-block;
+  height: 5em;
+  margin: auto;
+}
+
+#score p {
+  color: white;
+  font-size: 36px;
+  font-family: "Lexend Deca", serif;
+}
+
+/*# sourceMappingURL=sidebar.component.css.map */

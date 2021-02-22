@@ -1,0 +1,12 @@
+#next_block {
+  width: calc(100% - 2em);
+  margin: 1em;
+  border-radius: 1em;
+  background: #33333355;
+}
+
+#next_block_canvas {
+  width: 50%;
+}
+
+/*# sourceMappingURL=next-block.component.css.map */

@@ -1,0 +1,12 @@
+@import '../../../variables';
+
+#next_block {
+  width: calc(100% - 2em);
+  margin: 1em;
+  border-radius: 1em;
+  background: $next-block-bg;
+}
+
+#next_block_canvas {
+  width: 50%;
+}

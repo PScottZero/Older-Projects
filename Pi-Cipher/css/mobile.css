@@ -1,0 +1,123 @@
+/* mobile styles */
+@media (max-width: 720px) {
+
+    /* hamburger menu button styling */
+    .bar1, .bar2, .bar3 {
+        z-index: 3;
+        width: 2em;
+        height: 0.3em;
+        border-radius: 0.3em;
+        margin: 0.3em 0;
+        background: darkturquoise;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+        animation: menu_pulse;
+        animation-duration: var(--duration);
+        animation-delay: var(--delay);
+        animation-iteration-count: infinite;
+        transition: var(--slide);
+    }
+
+    /* hamburger menu button animation */
+    .change .bar1 {
+        transform: translate(-0.05em, 0.4em) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(-0.05em, -0.8em) rotate(45deg);
+    }
+
+    /* main web content container */
+    #content {
+        width: 100%;
+        margin-top: 12vh;
+        height: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    #footer, #footer_alt {
+        display: none;
+    }
+
+    /* text field input */
+    #ciphertext, #plaintext {
+        resize: none;
+        width: 80%;
+        height: 6em;
+        border-radius: 1em;
+        margin-top: 0.5em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        padding: 0.75em;
+        background: var(--transparent1);
+
+        /* font */
+        font-family: var(--font-stack);
+        font-size: 24px;
+    }
+
+    /* container for website logo */
+    #logo_container {
+        display: block;
+        width: 40%;
+        margin: auto;
+    }
+
+    /* hamburger menu button */
+    #menu_button {
+        display: inline-block;
+        z-index: 3;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 2em;
+        height: 2em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    /* slide menu */
+    #slide_menu {
+        position: fixed;
+        z-index: 2;
+        width: 15em;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 4em;
+        text-align: left;
+        line-height: 2;
+        top: 0;
+        left: -21em;
+        background: var(--transparent2);
+        transition: var(--slide);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    /* links in slide menu */
+    #slide_menu a {
+        display: block;
+        font-size: 24px;
+        margin-left: 1em;
+        transition: var(--slide);
+    }
+
+    /* pi cipher explanation */
+    #summary {
+        font-family: var(--font-stack);
+        font-size: 16px;
+        text-align: justify;
+        text-indent: 2em;
+        line-height: 1.5;
+        padding: 2em;
+        width: auto;
+        height: auto;
+        margin: 1em;
+        background: var(--transparent1);
+        border-radius: 1em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    }
+}

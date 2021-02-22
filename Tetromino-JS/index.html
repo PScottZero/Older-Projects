@@ -1,0 +1,95 @@
+<!--
+Paul Scott
+26 March 2019
+
+main html file for tetromino website
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/tetromino.js"></script>
+  <script src="js/playfield.js"></script>
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+  <!-- title and favicon -->
+  <title>Tetromino</title>
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<!-- body -->
+<body>
+
+<!-- website header -->
+<div id="header">
+
+  <!-- logo -->
+  <img src="img/logo.svg" alt="logo">
+
+  <!-- navigation -->
+  <nav>
+    <img id="nav_controls" src="img/controls.svg" alt="controls" onclick="nav(this)">
+    <img id="nav_about" src="img/about.svg" alt="controls" onclick="nav(this)">
+  </nav>
+</div>
+
+<!-- controls -->
+<div id="controls">
+  <div class="triangle_up" style="right: 5.2em;"></div>
+  <p> &larr; : Move Left </p>
+  <p> &rarr; : Move Right </p>
+  <p> &darr; : Move Down </p>
+  <p> Space / X : Rotate Clockwise </p>
+  <p> Z : Rotate Counter-Clockwise </p>
+  <p> N : New Game </p>
+  <p> P : Pause </p>
+</div>
+
+<!-- about -->
+<div id="about">
+  <div class="triangle_up" style="right: 0.7em;"></div>
+  <p> Created by Paul Scott </p>
+  <p> The Pennsylvania State University </p>
+  <p> Computer Science Major / Math Minor </p>
+  <p> Last Updated 26 March 2019 </p>
+  <p>
+    <a href="https://github.com/PScottZero/Tetromino">GitHub</a> |
+    <a href="https://www.linkedin.com/in/paul-scott-047858140/">LinkedIn</a> |
+    <a href="https://pjs4.com">Website</a>
+  </p>
+</div>
+
+<!-- main content of website -->
+<div id="content">
+
+  <!-- tetris playfield -->
+  <div style="float:left">
+    <canvas id="playfield" width="300px" height="600px"></canvas>
+  </div>
+
+  <div style="float:right">
+
+    <!-- score panel -->
+    <div id="score">
+      <p> Score: </p>
+      <p> 000000 </p>
+    </div>
+
+    <!-- next block panel -->
+    <canvas id="next_block" width="150px" height="475px"></canvas>
+  </div>
+</div>
+</body>
+</html>

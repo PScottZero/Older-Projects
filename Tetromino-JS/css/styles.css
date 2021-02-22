@@ -1,0 +1,153 @@
+/*
+Paul Scott
+26 March 2019
+
+styles for tetromino website
+ */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  --playfield-color: #393d45;
+  --header-color: #41464f;
+  --body-color: #30343a;
+  --foreground: 1;
+  --background: 0;
+}
+
+/* links */
+a, a:visited, a:hover {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+/* link hover */
+a:hover { color: lightgray }
+
+/* website body */
+body {
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+  background: var(--body-color);
+}
+
+/* website nav bar */
+nav {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: auto;
+}
+
+/* nav bar image */
+nav img {
+  display: inline-block;
+  width: 3.5em;
+  margin: 0 0.5em 0 0.5em;
+  transition: 0.1s;
+}
+
+/* nav bar image hover */
+nav img:hover { width: 4em }
+
+/* controls and about triangle */
+.triangle_up {
+  position: absolute;
+  top: -0.75em;
+  width: 0;
+  height: 0;
+  border-left: 0.75em solid transparent;
+  border-right: 0.75em solid transparent;
+  border-bottom: 1em solid var(--header-color);
+}
+
+/* controls and about divs */
+#about, #controls {
+  z-index: var(--foreground);
+  display: none;
+  position: absolute;
+  right: 0.75em;
+  top: 4.75em;
+  width: 20em;
+  padding: 2em;
+  color: white;
+  background: var(--header-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+}
+
+/* controls and about text */
+#about p, #controls p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* tetris game container */
+#content {
+  z-index: var(--background);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 495px;
+  transform: translate(-50%, -50%);
+  margin-top: 1.5em;
+}
+
+/* website header */
+#header {
+  z-index: var(--foreground);
+  position: fixed;
+  height: 4em;
+  width: 100%;
+  top: 0;
+  background: var(--header-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25)
+}
+
+/* website logo */
+#header img {
+  float: left;
+  display: inline-block;
+  height: 100%;
+}
+
+/* next block canvas */
+#next_block {
+  z-index: var(--background);
+  display: block;
+  float: top;
+  background: var(--playfield-color);
+  border-radius: 1em;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* tetris playfield */
+#playfield {
+  z-index: var(--background);
+  display: block;
+  background: var(--playfield-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+}
+
+/* tetris score div */
+#score {
+  z-index: var(--background);
+  display: block;
+  width: 150px;
+  height: 100px;
+  float: top;
+  margin-bottom: 25px;
+  background: var(--playfield-color);;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+}
+
+/* tetris score text */
+#score p {
+  color: white;
+  padding: 5px;
+  font-size: 32px;
+  text-align: center;
+}
