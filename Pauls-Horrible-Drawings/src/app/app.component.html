@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-drawings></app-drawings>
+<app-footer></app-footer>
+<app-overlay *ngIf="drawingIsSelected()" [drawing]="getSelectedDrawing()"></app-overlay>

@@ -1,0 +1,1 @@
+public class Block extends BlockAbstract{    private int function;    public Block()    {        super(8, 8);        this.function = 0;    }    public int getFunction() { return function; }    public void setFunction(int function) { this.function = function; }}

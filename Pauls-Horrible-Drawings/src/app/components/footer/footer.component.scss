@@ -1,0 +1,12 @@
+#footer {
+  bottom: 0;
+  background: #222;
+  color: #777;
+  text-align: center;
+  line-height: 2;
+  padding: 2em;
+
+  @media screen and (max-width: 700px) {
+    padding: 1em;
+  }
+}

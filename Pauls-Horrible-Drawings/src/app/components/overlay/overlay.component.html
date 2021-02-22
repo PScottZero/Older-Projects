@@ -1,0 +1,8 @@
+<div id="overlay" (click)="unselectDrawing()">
+
+  <!-- enlarged image -->
+  <div id="larger_img">
+    <p>{{this.drawing.title}}</p>
+    <img [src]="this.drawing.image" [alt]="this.drawing.title">
+  </div>
+</div>

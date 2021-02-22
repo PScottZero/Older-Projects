@@ -1,0 +1,9 @@
+<div id="content">
+
+  <!-- drawings -->
+  <div *ngFor="let drawing of getDrawings()"
+       class="drawing"
+       (click)="selectDrawing(drawing)"
+       [ngStyle]="{'background': 'url(' + drawing.image + ') center', 'background-size': 'cover'}">
+  </div>
+</div>
